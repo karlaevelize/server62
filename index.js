@@ -12,16 +12,19 @@ app.get("/", (request, response, next) => {
   response.send("Hello from my Express API")
 })
 
+//Send hello to specific name
 app.get("/day/:name", (request, response, next) => {
   const name = request.params.name
   console.log("name", name)
   response.send(`Have a great day, ${name}!`)
 })
 
+//Send a list of characters
 app.get("/characters", (request, response, next) => {
   response.send(data)
 })
 
+//Send characters by id
 app.get("/characters/:id", (request, response, next) => {
   const id = request.params.id
   // const { id } = reques.params
