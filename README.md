@@ -1,0 +1,2 @@
+- Step 1: `npm init --y`
+- Step 2: `npm install PACKAGE-NAME`
